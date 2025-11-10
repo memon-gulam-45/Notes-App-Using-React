@@ -73,7 +73,7 @@ const App = () => {
                   <h3 className="leading-tight text-lg font-bold">
                     {elem.title}
                   </h3>
-                  <p className="mt-4 text-xs leading-tight font-medium text-gray-600">
+                  <p className="mt-4 text-xs leading-tight font-semibold text-gray-600">
                     {elem.details}
                   </p>
                 </div>
