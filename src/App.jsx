@@ -19,6 +19,13 @@ const App = () => {
     setDetails("");
   };
 
+  const deleteNote = (idx) => {
+    const copyTask = [...task];
+    copyTask.splice(idx, 1);
+
+    setTask(copyTask);
+  };
+
   return (
     <div className="h-screen overflow-hidden lg:flex bg-black text-white">
       <form
@@ -55,19 +62,29 @@ const App = () => {
       </form>
       <div className="lg:w-1/2 lg:border-l-2 p-10 ">
         <h1 className="text-4xl font-bold">Recent Notes</h1>
-        <div className="flex flex-wrap gap-5 mt-5 h-full overflow-auto">
+        <div className="flex flex-wrap items-start justify-start gap-5 mt-5 h-[90%] overflow-auto">
           {task.map(function (elem, idx) {
             return (
               <div
                 key={idx}
-                className="h-52 w-40 rounded-2xl bg-white text-black p-4"
+                className="flex flex-col justify-between items-start relative h-52 w-40 rounded-2xl text-black pt-9 pb-5 px-4 bg-cover bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')]"
               >
-                <h2 className="leading-tight text-xl font-bold">
-                  {elem.title}
-                </h2>
-                <p className="mt-4 leading-tight font-medium text-gray-600">
-                  {elem.details}
-                </p>
+                <div>
+                  <h3 className="leading-tight text-lg font-bold">
+                    {elem.title}
+                  </h3>
+                  <p className="mt-4 text-xs leading-tight font-medium text-gray-600">
+                    {elem.details}
+                  </p>
+                </div>
+                <button
+                  onClick={() => {
+                    deleteNote(idx);
+                  }}
+                  className="w-full cursor-pointer active:scale-95 bg-red-400 py-1 text-xs rounded font-bold text-white"
+                >
+                  Delete
+                </button>
               </div>
             );
           })}
