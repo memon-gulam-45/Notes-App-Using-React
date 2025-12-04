@@ -52,6 +52,14 @@ NOTES-APP/
 
 ---
 
+## 🎨 UI Preview
+
+Below is a preview of the Notes App interface:
+
+> ![Notes App UI Preview](./src/assets/notes-ui.png)
+
+---
+
 ## 🧠 How It Works
 
 - **title & details** → controlled inputs stored in state
