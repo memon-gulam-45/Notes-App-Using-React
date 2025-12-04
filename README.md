@@ -72,7 +72,7 @@ Below is a preview of the Notes App interface:
 
 ## 👨‍💻 Developer
 
-**Made with 🤍 by [Gulam Mohyudin Memon](https://github.com/memon-gulam-45)**
+**Made with 🤍 by [Gulam Mohyudin Memon](https://www.linkedin.com/in/gulammohyudin-memon/)**
 
 ---
 
