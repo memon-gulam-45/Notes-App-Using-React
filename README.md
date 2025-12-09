@@ -3,6 +3,8 @@
 A clean and minimal Notes App built using **React.js** and **Tailwind CSS**.  
 It lets users create small notes with title + details and display them like sticky notes.
 
+> Live Demo: https://notes-app-using-react-lilac.vercel.app/
+
 ---
 
 ## 🚀 Features
